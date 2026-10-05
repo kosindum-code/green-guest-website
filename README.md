@@ -1,5 +1,11 @@
 # The Green Guest — Nuwara Eliya
 
+<p align="center">
+  <a href="https://cozy-rugelach-3438d6.netlify.app/">
+    <img src="artifacts/green-guest/public/images/website-preview.png" alt="Preview of The Green Guest website in Nuwara Eliya" width="100%">
+  </a>
+</p>
+
 A welcoming, responsive website for **The Green Guest**, a private villa in the cool highlands of Nuwara Eliya, Sri Lanka. It introduces the villa, showcases its rooms and surroundings, and helps guests enquire about dates directly through WhatsApp.
 
 **Live website:** [cozy-rugelach-3438d6.netlify.app](https://cozy-rugelach-3438d6.netlify.app/)
