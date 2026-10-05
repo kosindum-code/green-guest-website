@@ -1,0 +1,8 @@
+[build]
+command = "pnpm --filter @workspace/green-guest run build"
+publish = "artifacts/green-guest/dist/public"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200

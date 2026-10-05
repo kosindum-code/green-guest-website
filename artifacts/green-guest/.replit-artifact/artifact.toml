@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "The Green Guest"
+description = "A premium villa website for The Green Guest in Nuwara Eliya, where guests can explore the property, view its gallery, and send booking enquiries."
+version = "1.0.0"
+id = "artifacts/green-guest"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24248
+
+[services.development]
+run = "pnpm --filter @workspace/green-guest run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/green-guest", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/green-guest/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24248"
+BASE_PATH = "/"
